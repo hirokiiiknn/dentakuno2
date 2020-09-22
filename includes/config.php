@@ -2,7 +2,7 @@
 
 
 <?php
-//例外処理
+
 
 ob_start(); //Turns on output buffering 
 session_start();
