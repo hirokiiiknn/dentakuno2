@@ -87,3 +87,4 @@ $userLoggedInObj = new User($con, $usernameLoggedIn);
 
         <div id="mainSectionContainer">
             <div id="mainContentContainer">
+            
