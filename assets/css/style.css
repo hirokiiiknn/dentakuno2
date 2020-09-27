@@ -497,6 +497,11 @@ a:hover {
     flex-wrap: wrap;
 }
 
+
+.videoGrid a {
+    margin-right: 80px;
+}
+
 .suggestions .videoGridItem {
     display: flex;
     height: auto;
@@ -546,6 +551,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     width: 210px;
+    margin-top: 40px;
 }
 
 .suggestions .videoGridItem .details {

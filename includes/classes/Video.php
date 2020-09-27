@@ -233,5 +233,30 @@ class Video {
         return $query->fetchColumn();
     }
 
+
+    public function getVideoUrl(){
+        // $query = $this->con->prepare("SELECT videoUrl FROM videos WHERE uploadedBy=:uploadedBy" );
+        // $query->bindParam(":uploadedBy", $username);
+        // $query->execute();
+
+        // return $query->fetchColumn();
+        $videoUrl = $this->sqlData['videoUrl'];
+    
+        // $videos = array();
+        // while($row = $query->fetch(PDO::FETCH_ASSOC)){
+        //   $videos[] = new Video($this->con, $row, $this->profileUserObj->getUsername());
+        // }
+        // foreach ($query->fetchAll() as $row) {
+        //   echo $row['videoUrl'];
+          
+        // }
+        return "<iframe width='280' height='157' src='https://www.youtube.com/embed/$videoUrl' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>";
+          // if ($uploadedBy == $_GET["username"]){
+    
+        // }
+      
+      }
+
+
 }
 ?>

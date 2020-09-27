@@ -25,9 +25,12 @@ class VideoGridItem {
         
         $thumbnail = $this->video->getThumbnail();
         $duration = $this->video->getDuration();
+        $videoUrl = $this->video->getVideoUrl();
 
         return "<div class='thumbnail'>
-                    <img src='$thumbnail'>
+                    <div class='video'>
+                        $videoUrl
+                    </div>
                     <div class='duration'>
                         <span>$duration</span>
                     </div>
@@ -45,10 +48,7 @@ class VideoGridItem {
         return "<div class='details'>
                     <h3 class='title'>$title</h3>
                     <span class='username'>$username</span>
-                    <div class='stats'>
-                        <span class='viewCount'>$views views - </span>
-                        <span class='timeStamp'>$timestamp</span>
-                    </div>
+                    
                     $description
                 </div>";
     }
@@ -66,3 +66,6 @@ class VideoGridItem {
 
 }
 ?>
+
+
+

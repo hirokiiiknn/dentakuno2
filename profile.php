@@ -12,3 +12,6 @@ else {
 $profileGenerator = new ProfileGenerator($con, $userLoggedInObj, $profileUsername);
 echo $profileGenerator->create();
 ?>
+
+
+
