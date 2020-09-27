@@ -13,26 +13,22 @@ class VideoGridItem {
         $details = $this->createDetails();
         $url = "watch.php?id=" . $this->video->getId();
 
-        return "<a href='$url'>
+        return "
                     <div class='videoGridItem'>
                         $thumbnail
                         $details
                     </div>
-                </a>";
+                ";
     }
 
     private function createThumbnail() {
         
         $thumbnail = $this->video->getThumbnail();
-        $duration = $this->video->getDuration();
         $videoUrl = $this->video->getVideoUrl();
 
         return "<div class='thumbnail'>
                     <div class='video'>
                         $videoUrl
-                    </div>
-                    <div class='duration'>
-                        <span>$duration</span>
                     </div>
                 </div>";
 
@@ -41,14 +37,11 @@ class VideoGridItem {
     private function createDetails() {
         $title = $this->video->getTitle();
         $username = $this->video->getUploadedBy();
-        $views = $this->video->getViews();
         $description = $this->createDescription();
-        $timestamp = $this->video->getTimeStamp();
 
         return "<div class='details'>
                     <h3 class='title'>$title</h3>
                     <span class='username'>$username</span>
-                    
                     $description
                 </div>";
     }

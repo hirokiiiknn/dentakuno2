@@ -36,7 +36,8 @@ $userLoggedInObj = new User($con, $usernameLoggedIn);
             </button>
 
             <a class="logoContainer" href="index.php">
-                <img src="assets/images/icons/VideoTubeLogo.png" title="logo" alt="Site logo">
+                <img src="assets/images/icons/dentechno.png" title="logo" alt="Site logo">
+                <h2>Salon De Dentechno</h2>
             </a>
 
             <div class="searchBarContainer">
@@ -87,4 +88,3 @@ $userLoggedInObj = new User($con, $usernameLoggedIn);
 
         <div id="mainSectionContainer">
             <div id="mainContentContainer">
-            

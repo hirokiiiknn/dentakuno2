@@ -51,11 +51,18 @@ a:hover {
 
 #mastHeadContainer .logoContainer {
     width: 150px;
+    display: flex;
 }
 
 #mastHeadContainer .logoContainer img {
     height: 25px;
     margin-left: 8px;
+}
+
+#mastHeadContainer .logoContainer h2{
+    font-size: 11px;
+    margin-top: 7px;
+    color: rgba(17, 17, 17, 0.8);
 }
 
 #sideNavContainer {
@@ -498,9 +505,6 @@ a:hover {
 }
 
 
-.videoGrid a {
-    margin-right: 80px;
-}
 
 .suggestions .videoGridItem {
     display: flex;
@@ -547,11 +551,11 @@ a:hover {
 .videoGridItem .details {
     padding-right: 24px;
     position: relative;
-    cursor: pointer;
     display: flex;
     flex-direction: column;
     width: 210px;
     margin-top: 40px;
+    margin-right: 80px;
 }
 
 .suggestions .videoGridItem .details {
@@ -839,4 +843,13 @@ border: 3px solid #828282;
 .editVideoContainer .topSection .thumbnailItemsContainer .thumbnailItem img {
     width: 100%;
     cursor: pointer;
+}
+
+.footLogo{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.footLogo img{
+    width: 100px;
 }
