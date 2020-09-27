@@ -8,7 +8,7 @@ class SettingsFormProvider {
         $saveButton = $this->createSaveUserDetailsButton();
 
         return "<form action='settings.php' method='POST' enctype='multipart/form-data'>
-                    <span class='title'>User details</span>
+                    <span class='title'>ユーザー詳細(User details)</span>
                     $firstNameInput
                     $lastNameInput
                     $emailInput
@@ -17,14 +17,14 @@ class SettingsFormProvider {
     }
 
     public function createPasswordForm() {
-        $oldPasswordInput = $this->createPasswordInput("oldPassword", "Old password");
-        $newPassword1Input = $this->createPasswordInput("newPassword", "New password");
-        $newPassword2Input = $this->createPasswordInput("newPassword2", "Confirm new password");
+        $oldPasswordInput = $this->createPasswordInput("oldPassword", "古いパスワード(oldPassword)");
+        $newPassword1Input = $this->createPasswordInput("newPassword", "新しいパスワード(newPassword)");
+        $newPassword2Input = $this->createPasswordInput("newPassword2", "確認(Confirm new password)");
 
         $saveButton = $this->createSavePasswordButton();
 
         return "<form action='settings.php' method='POST' enctype='multipart/form-data'>
-                    <span class='title'>Update password</span>
+                    <span class='title'>パスワード変更(Update password)</span>
                     $oldPasswordInput
                     $newPassword1Input
                     $newPassword2Input

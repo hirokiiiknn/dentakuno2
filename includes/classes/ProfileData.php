@@ -57,13 +57,11 @@ class ProfileData {
 
     public function getAllUserDetails() {
         return array(
-            "Name" => $this->getProfileUserFullName(),
-            "Username" => $this->getProfileUsername(),
-            "Subscribers" => $this->getSubscriberCount(),
-            "Total views" => $this->getTotalViews(),
+            "名前(Name)" => $this->getProfileUserFullName(),
+            "ユーザーネーム(Username)" => $this->getProfileUsername(),
             // "Sign up date" => $this->getSignUpDate()
-            "情報" => $this->getInformation(),
-            "経歴" => $this->getResume()
+            "情報(Information)" => $this->getInformation(),
+            "経歴(Resume)" => $this->getResume()
         );
     }
 

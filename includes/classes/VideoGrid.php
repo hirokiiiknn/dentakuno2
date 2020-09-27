@@ -83,7 +83,7 @@ class VideoGrid {
 
         return "<div class='videoGridHeader'>
                         <div class='left'>
-                            全ての動画
+                            全ての動画(All Videos)
                         </div>
                         $filter
                     </div>";

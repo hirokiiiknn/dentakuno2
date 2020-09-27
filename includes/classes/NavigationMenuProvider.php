@@ -11,7 +11,6 @@ class NavigationMenuProvider {
     public function create() {
         $menuHtml = $this->createNavItem("Home", "assets/images/icons/home.png", "index.php");
         $menuHtml .= $this->createNavItem("講師(Professor)", "assets/images/icons/subscriptions.png", "subscriptions.php");
-        $menuHtml .= $this->createNavItem("いいね(Liked)", "assets/images/icons/thumb-up.png", "likedVideos.php");
 
         if(User::isLoggedIn()) {
             $menuHtml .= $this->createNavItem("設定(Settings)", "assets/images/icons/settings.png", "settings.php");
@@ -37,12 +36,12 @@ class NavigationMenuProvider {
     private function createSubscriptionsSection() {
         $subscriptions = $this->userLoggedInObj->getSubscriptions();
 
-        $html = "<span class='heading'>Subscriptions</span>";
-        foreach($subscriptions as $sub) {
-            $subUsername = $sub->getUsername();
-            $html .= $this->createNavItem($subUsername, $sub->getProfilePic(), "profile.php?username=$subUsername");
-        }
-        return $html;
+        // $html = "<span class='heading'>Subscriptions</span>";
+        // foreach($subscriptions as $sub) {
+        //     $subUsername = $sub->getUsername();
+        //     $html .= $this->createNavItem($subUsername, $sub->getProfilePic(), "profile.php?username=$subUsername");
+        // }
+        // return $html;
     }
 
 }
