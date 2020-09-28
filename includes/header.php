@@ -56,16 +56,16 @@ $userLoggedInObj = new User($con, $usernameLoggedIn);
                     $username = $userLoggedInObj->getUsername();
                     if(isset($_GET["username"])){
                         $profileUsername = $_GET["username"];
-                        if($profileUsername == "AoshimaHitoshi" && $profileUsername == $username ){
+                        if($profileUsername == "HitoshiAoshima" && $profileUsername == $username ){
                             echo "<img class='upload' src='assets/images/icons/upload.png'>";
                         } 
-                        elseif($profileUsername == "KataokaShigeo" && $profileUsername == $username ){
+                        elseif($profileUsername == "ShigeoKataoka" && $profileUsername == $username ){
                             echo "<img class='upload' src='assets/images/icons/upload.png'>";
                         }
-                        elseif($profileUsername == "NishimuraYoshimi" && $profileUsername == $username ){
+                        elseif($profileUsername == "YoshimiNishimura" && $profileUsername == $username ){
                             echo "<img class='upload' src='assets/images/icons/upload.png'>";
                         }
-                        elseif($profileUsername == "KawashimaTetsu" && $profileUsername == $username ){
+                        elseif($profileUsername == "TetsuKawashima" && $profileUsername == $username ){
                             echo "<img class='upload' src='assets/images/icons/upload.png'>";
                         }
                     }
