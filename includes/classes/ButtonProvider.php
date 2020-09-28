@@ -64,9 +64,9 @@ class ButtonProvider {
 
         $button = ButtonProvider::createButton($buttonText, null, $action, $buttonClass);
 
-        return "<div class='subscribeButtonContainer'>
-                    $button
-                </div>";
+        // return "<div class='subscribeButtonContainer'>
+        //             $button
+        //         </div>";
     }
     
     public static function createUserProfileNavigationButton($con, $username) {
