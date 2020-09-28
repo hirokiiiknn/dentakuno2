@@ -15,7 +15,6 @@ class Constants {
 
     public static $passwordIncorrect = "Incorrect password";
 
-    
 
 
 }

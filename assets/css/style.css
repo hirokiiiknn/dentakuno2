@@ -728,12 +728,12 @@ a:hover {
     vertical-align: middle;
 }
 
-.coverPhotoContainer .channelName {
+.coverPhotoContainer .channelWord {
     position: absolute;
-    top: calc(50% - 40px);
-    font-size: 50px;
+    left: 5px;
+    top: 10px;
+    font-size: 18px;
     color: #fff;
-    text-align: center;
     width: 100%;
     letter-spacing: 5px;
 }
@@ -866,3 +866,4 @@ border: 3px solid #828282;
 .footLogo img{
     width: 100px;
 }
+

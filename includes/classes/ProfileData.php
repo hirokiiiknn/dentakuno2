@@ -60,12 +60,12 @@ class ProfileData {
             "名前(Name)" => $this->getProfileUserFullName(),
             "ユーザーネーム(Username)" => $this->getProfileUsername(),
             // "Sign up date" => $this->getSignUpDate()
-            "情報(Information)" => $this->getInformation(),
+            "一言(Word)" => $this->getInformation(),
             "経歴(Resume)" => $this->getResume()
         );
     }
 
-    private function getInformation(){
+    public function getInformation(){
         $query = $this->con->prepare("SELECT information FROM users WHERE username=:username");
         $query->bindParam(":username", $username);
         $username = $this->getProfileUsername();
@@ -74,7 +74,7 @@ class ProfileData {
         return $query->fetchColumn();
     }
 
-    private function getResume(){
+    public function getResume(){
         $query = $this->con->prepare("SELECT resume FROM users WHERE username=:username");
         $query->bindParam(":username", $username);
         $username = $this->getProfileUsername();
