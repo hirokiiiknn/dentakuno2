@@ -37,7 +37,7 @@ function getInputValue($name) {
 <!DOCTYPE html>
 <html>
 <head>
-    <title>VideoTube</title>
+    <title>Salon De Dentechno</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
@@ -54,9 +54,9 @@ function getInputValue($name) {
         <div class="column">
 
             <div class="header">
-                <img src="assets/images/icons/VideoTubeLogo.png" title="logo" alt="Site logo">
+                <img src="assets/images/icons/dentechno.png" title="logo" alt="Site logo">
                 <h3>Sign Up</h3>
-                <span>to continue to VideoTube</span>
+                <span>to continue to Salon De Dentechno</span>
             </div>
 
             <div class="loginForm">
@@ -92,9 +92,12 @@ function getInputValue($name) {
 
 
             </div>
-
-            <a class="signInMessage" href="signIn.php">Already have an account? Sign in here!</a>
-        
+            <div class="sign">
+                <a class="signInMessage" href="signIn.php">もうすでにアカウントをお持ちですか？<br>(Already have an account? Sign in here!)</a>
+            </div>
+            <div class="footer">
+                <img src="assets/images/icons/logo_cool_japan (1).gif" title="logo" alt="cool Japan">
+            </div>
         </div>
     
     </div>
@@ -104,3 +107,5 @@ function getInputValue($name) {
 
 </body>
 </html>
+
+

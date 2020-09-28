@@ -209,10 +209,22 @@ a:hover {
     margin-bottom: 20px;
 }
 
+.footer {
+    text-align: center;
+}
+.sign{
+    text-align: center;
+}
+
 .signInMessage {
     font-size: 14px;
     font-weight: 400;
     color: #212529;
+}
+
+.footer img{
+    width: 100px;
+    margin-top: 10px;
 }
 
 .errorMessage {

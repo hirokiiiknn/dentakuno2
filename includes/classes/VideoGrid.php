@@ -87,7 +87,7 @@ class VideoGrid {
                         </div>
                         $filter
                     </div>";
-                    
+
     }
 
     public function createLarge($videos, $title, $showFilter) {
