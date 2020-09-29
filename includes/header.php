@@ -52,7 +52,7 @@ $userLoggedInObj = new User($con, $usernameLoggedIn);
 
             <div class="rightIcons">
                 <a href="upload.php">
-                    <?php
+                <?php
                     $username = $userLoggedInObj->getUsername();
                     if(isset($_GET["username"])){
                         $profileUsername = $_GET["username"];
@@ -74,7 +74,9 @@ $userLoggedInObj = new User($con, $usernameLoggedIn);
                     }
                     ?>
                 </a>
-                <?php echo ButtonProvider::createUserProfileNavigationButton($con, $userLoggedInObj->getUsername()); ?>
+                <?php 
+                echo ButtonProvider::createUserProfileNavigationButton($con, $userLoggedInObj->getUsername());
+                 ?>
             </div>
 
         </div>
