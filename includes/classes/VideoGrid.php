@@ -74,11 +74,11 @@ class VideoGrid {
 
             $newUrl = basename($_SERVER["PHP_SELF"]) . "?" . $newQuery;
            
-            $filter = "<div class='right'>
-                            <span>Order by:</span>
-                            <a href='$newUrl&orderBy=uploadDate'>Upload date</a>
-                            <a href='$newUrl&orderBy=views'>Most viewed</a>
-                        </div>";
+            // $filter = "<div class='right'>
+            //                 <span>Order by:</span>
+            //                 <a href='$newUrl&orderBy=uploadDate'>Upload date</a>
+            //                 <a href='$newUrl&orderBy=views'>Most viewed</a>
+            //             </div>";
         }
 
         return "<div class='videoGridHeader'>

@@ -3,10 +3,14 @@
 <div class="videoSection">
     <?php
 
-    if(UserLoggedIn)
-    $subscriptionsProvider = new SubscriptionsProvider($con, $userLoggedInObj);
-    $subscriptionVideos = $subscriptionsProvider->getVideos();
-    $videoGrid = new VideoGrid($con, $userLoggedInObj->getUsername());
+    if(User::isLoggedIn()){
+        $subscriptionsProvider = new SubscriptionsProvider($con, $userLoggedInObj);
+        $subscriptionVideos = $subscriptionsProvider->getVideos();
+        $videoGrid = new VideoGrid($con, $userLoggedInObj->getUsername());
+    } else {
+        return "";
+    }
+    
 
     if(User::isLoggedIn() && sizeof($subscriptionVideos) > 0) {
         echo $videoGrid->create($subscriptionVideos, "Subscriptions", false);
