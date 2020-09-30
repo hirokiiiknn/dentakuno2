@@ -8,11 +8,15 @@ Dectechnoは世界中の歯科技工を学びたい人が登録できるYoutube�
 https://dentakuno2.herokuapp.com/index.php 
 
 上記のURLがこのサイトにログインするURLですが、ログインしないと入れなくなってます。
+
 テストアカウント
+
 Username: sample
+
 Password: sample
 
 下記がサイトの見た目でこんな感じで教授ごとに動画がみれます。
+
 https://gyazo.com/95f12c2f12c8f7d9b286a8d226989b90
 
 # 制作背景
