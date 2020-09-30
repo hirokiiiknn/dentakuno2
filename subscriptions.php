@@ -22,6 +22,7 @@ $videoGrid = new VideoGrid($con, $userLoggedInObj);
         <a href="profile.php?username=KojiSato"><img src="assets/images/professorsPic/KojiSato.png"></a>
         <a href="profile.php?username=KinKataoka"><img src="assets/images/professorsPic/KinKataoka.png"></a>
 
+        
     </div>  
 
 

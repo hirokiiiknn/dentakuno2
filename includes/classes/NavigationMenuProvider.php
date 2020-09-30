@@ -13,7 +13,7 @@ class NavigationMenuProvider {
         $menuHtml .= $this->createNavItem("講師(Professor)", "assets/images/icons/subscriptions.png", "subscriptions.php");
 
         if(User::isLoggedIn()) {
-            $menuHtml .= $this->createNavItem("ライブ座談会(Live Talk)", "assets/images/icons/icons8-live_photos.png", "live.php");
+            $menuHtml .= $this->createNavItem("ライブ座談会(Live Talk)", "assets/images/icons/icons8-live_photos.png", "profile.php?username=LiveArea");
             $menuHtml .= $this->createNavItem("設定(Settings)", "assets/images/icons/settings.png", "settings.php");
             $menuHtml .= $this->createNavItem("ログアウト(Log Out)", "assets/images/icons/logout.png", "logout.php");
 
