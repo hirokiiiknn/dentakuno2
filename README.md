@@ -41,9 +41,10 @@ hiroki.world1214@gmail.com
 
 # DB
 
-users 
+# usersテーブル
 
 |Column|Type|Options|
+|------|----|-------|
 |id|int|null: false|
 |firstName|string|null: false|
 |lastName|string|null: false|
@@ -53,9 +54,10 @@ users
 |profilePic|string|null: false|
 
 
-videos
+## videosテーブル
 
 |Column|Type|Options|
+|------|----|-------|
 |id|int|null: false|
 |uploadedBy|string|null: false|
 |title|string|null: false|
