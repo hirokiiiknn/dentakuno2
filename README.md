@@ -37,3 +37,26 @@ https://www.apachefriends.org/download.html
 # Author
 hirokiiiknn
 hiroki.world1214@gmail.com
+
+
+# DB
+
+users 
+
+|Column|Type|Options|
+|id|int|null: false|
+|firstName|string|null: false|
+|lastName|string|null: false|
+|email|string|null: false, unique: true|
+|password|string|null: false|
+|signUpDate|timestamp|null: false|
+|profilePic|string|null: false|
+
+
+videos
+
+|Column|Type|Options|
+|id|int|null: false|
+|uploadedBy|string|null: false|
+|title|string|null: false|
+|videoUrl|string|null: false|
